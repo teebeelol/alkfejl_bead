@@ -12,7 +12,7 @@ A rendszerben lehetőség van új ügyfelek felvételére, már meglévő ügyfe
 - **érvényesség**: Érvényesség az, hogy az adott ügyfél egy szolgáltatás esetén mely dátumig élvezheti a cég szolgáltatását, illetve tekinthető meg, hogy rendelkezik-e érvényes előfizetéssel. Érvényesség lejárása esetén a rendszer azonnal mutatni fogja, hogy az adott ügyfélnek van-e érvényes előfizetése.
 
 ## 1.2. Használatieset modell, funkcionális követelmények
-**Az ügyfélníílvántartó rendszer funkciói*
+**Az ügyfélníílvántartó rendszer funkciói**
 - Az adott, KAPPAKEEPONÉGYHEAD Zrt. cégnél dolgozó, ottani munkatársak regisztrációja az ügyfélnyilvántartó rendszerre
 - A már regisztrált KAPPAKEEPONÉGYHEAD Zrt. cég dolgozói, lehetőség az oldal belépésére, ezáltal igénybevenni a rendszer által nyújtott lehetőségeket
 - Bejelentkezett munkatásaknak lehetőségük van kijelentkezésre is
@@ -20,4 +20,5 @@ A rendszerben lehetőség van új ügyfelek felvételére, már meglévő ügyfe
 - Lehetőség új ügyfelek felvételére, azok bevitelére a rendszerbe.
 - Lehetőség nyílik a már meglévő ügyfelek adatainak szerkesztésére, ezáltal újabb előfizetés hosszabbítás esetén újabb lejárati dátum megadására.
 - Lehetőség van még már meglévő ügyfelek törlésére, azok törlése a nyilvántartó rendszerből
-### Használati eset diagramm
+### Használati eset diagram
+![Használati eset diagram](/src/alkfejl_bead_1.png)
