@@ -1,0 +1,59 @@
+{{#extend "scripts"}}
+<script src="/js/list_delete.js"></script>
+<script src="/lib/bootstrap-validator/dist/validator.min.js"></script>
+{{/extend}}
+
+{{#each messages}}
+<div class="alert alert-dismissible alert-{{../type}}">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    {{this}}
+</div>
+{{/each}}
+
+<div class="page-header">
+    <h1>Ügyfelek</h1>
+</div>
+<table class="table table-striped table-hover" id="customerTable">
+    <thead>
+        <tr>
+            <th>Felhasználónév</th>
+            <th>Név</th>
+            <th>Érvényesség</th>
+            <th>Státusz</th>
+        </tr>   
+    </thead>
+    <tbody>
+        {{#each customers}}
+        <tr>
+            <td>{{username}}</td>
+            <td>{{name}}</td>
+            <td>{{validityFormated}}</td>
+            {{#if status}}
+            <td><span class="label label-{{this.statusClass}}">Érvényes</span></td>
+            {{else}}
+            <td><span class="label label-{{this.statusClass}}">Érvénytelen</span></td>
+            {{/if}}
+            {{#if ../loggedIn}}
+           <td><a class="btn btn-primary btn-sm edit-gomb" href="/customers/edit/{{id}}" role="button">Szerkesztés</a></td>
+           <td><a class="btn btn-danger btn-sm torles-gomb" href="/customers/delete/{{id}}" role="button">Törlés</a></td>
+            {{/if}}
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{#if loggedIn}}
+<p><a href="/customers/new" class="btn btn-default">Új ügyfél felvétele</a></p>
+{{/if}}
+
+<div class="modal fade" id="newErrorModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

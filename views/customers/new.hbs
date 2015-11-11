@@ -1,0 +1,53 @@
+<div class="page-header">
+    <h1>Új ügyfél</h1>
+</div>
+
+<form class="form-horizontal" method="post">
+    <fieldset>
+        <div class="form-group
+            {{#if validationErrors.username}}
+                has-error
+            {{/if}}
+        ">
+            <label for="username" class="col-lg-2 control-label">Felhasználónév</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="username" name="username" placeholder="sanycika38912" type="text" value="{{data.username}}">
+                {{#if validationErrors.username}}
+                    <span class="help-block">{{validationErrors.username.msg}}</span>
+                {{/if}}
+            </div>
+        </div>
+        <div class="form-group
+            {{#if validationErrors.username}}
+                has-error
+            {{/if}}
+        ">
+            <label for="name" class="col-lg-2 control-label">Név</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="name" name="name" placeholder="Valami Sándor" type="text" value="{{data.name}}">
+                {{#if validationErrors.name}}
+                    <span class="help-block">{{validationErrors.name.msg}}</span>
+                {{/if}}
+            </div>
+        </div>
+                <div class="form-group
+            {{#if validationErrors.validity}}
+                has-error
+            {{/if}}
+        ">
+            <label for="validity" class="col-lg-2 control-label">Érvényesség</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="validity" name="validity" placeholder="1976-01-01" type="text" value="{{data.validity}}">
+                {{#if validationErrors.validity}}
+                    <span class="help-block">{{validationErrors.validity.msg}}</span>
+                {{/if}}
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button type="reset" class="btn btn-default">Törlés</button>
+                <button type="submit" class="btn btn-primary">Küldés</button>
+            </div>
+        </div>
+    </fieldset>
+</form>        
