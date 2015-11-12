@@ -80,4 +80,14 @@ Intuitív felhasználói felület, könnyű kezelhetőség
 ## 2.1. Architektúra terv
 ### **Komponens diagram**
 ![Komponens diagram](/src/alkfejl_bead1_compdiag.png)
+### **Oldaltérkép**
+- Főoldal
+- Ügyfelek
+  - Új ügyfél felvétele
+  - Szerkesztés
+  - Törlés
+  - Megtekintés
+- Bejelentkezés:
+  - Regisztráció
+  - Bejelentkezés
 
