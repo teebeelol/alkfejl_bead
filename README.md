@@ -126,6 +126,7 @@ Publikus:
 
 ### **Oldalvázlatok**
 ### **Designtervek**
+![Designterv](/src/alkfejl_bead1_design.png)
 
 ## 2.3. Osztálymodell
 ### **Adatmodell**
