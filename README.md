@@ -24,6 +24,14 @@ A rendszerben lehetőség van új ügyfelek felvételére, már meglévő ügyfe
 - Üzenetküldési lehetőség ügyfeleknek, melyet csak az adott ügyfél fog megkapni, mindezt a regisztrációnál megadott telefonszámra, SMS formájában
 - Régebben küldött üzenetek megtekintésére is van lehetőség, azok keltezési dátumával egyetemben.
 
+Felhasználóként szeretnék bejelenteni egy gépterembeli hibát, hogy minél előbb javíthassák. --> Hiba bejelentése
+Felhasználóként szeretnék visszajelzést kapni, hogy a bejelentett hiba milyen státuszban van. --> Hibák listázása
+Felhasználóként szeretnék kérdést vagy megjegyzést fűzni egy hibához azután is, hogy felvettem. --> Hiba history, chat, forum.
+Operátorként szeretném látni a hibalistát.
+Operátorként szeretnék egy hibát megtekinteni és státuszát váltani. Státuszváltáskor kötelező üzenetet megadni.
+A felhasználók és operátorok bejelentkezés után használhatják a funkciókat. Ezeket egy előre megadott listából, vagy LDAP authentikációval kell elvégezni.
+A főoldalon az alkalmazás ismertetése, esetleg statisztikák jelenik meg.
+
 ### Használati eset diagram: Regisztrálás vs. Login, és eseményekben való részvétel
 ![Használati eset diagram](/src/alk_fejl_bead1_usecase_1.png)
 
@@ -63,6 +71,8 @@ Azon dolgozók, melyek az Ügyfélnyílvántaartó-, és kezelőrendszert fogjá
 
 ## 1.4. Nem-funkcionális követelmények
 Az adott ügyfelekkel való kapcsolattartás elengedhetetlen az új ügyfelek felvételéhez, illetve egyéb, a rendszer által nem támogatott, nem megadott információkat az ügyfélnél megadott telefonszámon keresztül való egyeztetése a munkatársaknak.
+A kezelőrendszer elsődleges tervezési szempontjai közé tartozott a használhatóság, hogy a dolgozó kényelmesen, lesímultan, egyszerűen, ugyanakkor érthetően tudja kezelni az oldalt, összezavarodás nélkül, azaz kerülve a nem tiszta, nem egyértelmű dizájnokat, megvalósításokat. Tervezési szempont volt még továbbá a teljesítmény, a szerver felhasználóra való reagálásának kérdése szinte nem is kérdés, tervezéstől foggva előttünk lebeggett az, hogy egy oldalra ne kelljen fölöslegesen sokat várnni. Ezért is minden egyes tesztelésnél, mind új fejlesztésnél minden olyan helyet, ahol allusál volt tapasztalható, felgyorsítottuk. Programunk felépítését tekíntve az sem utolsó szempont, hogy a kódunkat karbantarthatósan építettük fel, azaz bármikor bármi javítás, bármi skálázási feladat esetén ezek egyszerűen elvégezhetőek lesznek a maguk szintjén persze.
+Felhasználóbarát, ergonomikus elrendezés és kinézet.Gyors működés. Biztonságos működés: jelszavak tárolása, funkciókhoz való hozzáférés.
 
 - **Fejlesztési módszertan:**
 Egységesített Eljárás
