@@ -148,3 +148,30 @@ Publikus:
 
 ### **Állapotdiagram**
 ![Állapotdiagram](/src/alkfejl_bead1_state.png)
+
+## 2.4. Dinamikus mőködés
+### **Szekvenciadiagram**
+![Szekvenciadiagram](/src/alkfejl_bead1_sequence.png)
+
+# 3. Implementáció
+## 3.1 Fejlesztői környezet bemutatása
+A C9.io egy vastagklienses webes megoldás. Egy olyan webes alkalmazás, ahol lehetőség van új projekteket létrehozni, projektek típusát megadni, mint például Java, C++, NodeJS, PHP, stb... Egy iylen projekt létrehozása után kapunk egy virtuális gépet C9.io-tól, valamennyi HDD, CPU, RAM-mal. Ehez kapunk egy bash ablakot, mellyel lehetőségünk van kezelni a virtuális gépet. Mindezek felett C9 biztosít nekünk egy IDE-t is, és ezeket egyben. a C9-ben való fejlesztés nagyon leegyszerűsít mindent. Bárhonnan, bármikor, ahol van internet hozzáférés, és egy böngésző, kényelmesen tudunk fejleszteni mindezekkel. Mivel basht is kapunk, lehetőségünk vagy telepítgetni, így lehetőség van Github-ot is telepíteni, így a verziózá nagyon egyszerűvé válik. Webes alkalmazások esetén az is egyszerűsítés, hogy nem kell saját webszervert létrehozni, feltelepíteni, hanem ezt mind rendelkezésünkre állítja a C9. 
+## 3.2 Könyvtárstruktúrában lévő mappák funkiójának bemutatása
+A könyvtárstruktúrát tekintve a program teljes mértékben tagolt, illetve a MVC tervezésí mintának köszönhetően, illetve ezt követve, a model, view, controller részek teljes egészében el vannak különítve egymástol, pontosan ilyen könyvtár struktúrában.
+# 4. Tesztelés
+# 5. Felhasználói dokumentáció
+## 5.1 A futtatáshoz ajánlott hardver-, szoftver konfiguráció
+Az kezelőrendszer futtatásához egy olyan szervergépen kell elhelyezni a programot, ahol a megfelelő dolgok fel vannak telepítve, ilyen a node.js futtatókörnyezet, melyen a program fut, illetve a program által nélkülözhetetlen egyéb függőségek.
+A program futtatását illetően:
+- **A futtatáshoz szükséges hardver:**
+CPU: Pentium 4, RAM: 2 GB, videó: 1024x768
+- **A futtatáshoz használt szoftverek:**
+Operációs rendszer: Windows XP SP1
+
+Ezen konfigurációk mellett, illetve valamely webszerver program mellett a program kivállóan ki tudja szolgálni a felhasználókat.
+Ami a programot használó felhasználókat illeti, egy olyan gép szükséges, melyen van internet kapcsolat, belső hálózat, illetve valamilyen böngésző, mivel a program vékony kliens megvalósítású, azaz böngészőn keresztűl történik a megjelenítés.
+## 5.2 Telepítés lépései: hogyan kerül a Githubról a célgépre a program
+Egy linux alapú szervergépen a git bash telepítése esetén az adott projekt saját gépre való klónozása esetén a program egyből kivállóan működésre képes. Telepített NVM esetén a program működéséhez nélkülözhetetlen függőségek a package.json miatt egy **nvm install** parancs esetén azonnal telepűlni fognak, így a program indítása egy **node server.js** parancs megadásával egyből el is fog indulni. A git, NVM és Node.js letöltése és feltelepítése azonban nélkülözhetetlen, ezen programokkal intézhető el a program futtatása. Ezen programok ebszerzésére van sok guide, nézd azt.
+
+## 5.3 A program használata
+A program a cég munkatársainak lett fejlesztve, biztosítva a cég ügyfeleinek egy megfelelő, köünnyen érthető, egyszerűen kezelhető felületet biztosítva. A kedvenc kis böngészőnkbe az URL cím írása után az index oldallal találkozunk, ahol egy bejelentkezés eseén már nyomban el is kezdhetjük a munkát a programunkkal. Amint azonban ha nem vagyunk regisztrálva, a belépő - login - oldalnál a regisztráció gomb segítségével képesek leszünk regisztrálni, nyilván ha az általunk megadott adatok megfelelnek az űrlapon előjelzett mezőkben megadott tulajdonságokinak. Login, illetve regisztráció után a programunk a ügyfeleket listázó oldalra fog minket irányítani, ahol lehetőségünk van új ügyfelek felvételére, meglévők módosítására, illetve törlésére. Ez egy általános áttekintő listázó oldal, innen alap információkat megkapunk, melyek lehetnek, hogy az adott ügyfél aktiv-e, meddig aktív, illetve mi a neve, és ehez hasonlók. Bővebb listázáshoz lehetőségünk van ügyfelek nevére kattíntani, így egyéb infórmációk mellett megtekínthetjük, hogy az adott ügyfélnek az egyes munkatársak megy levelekkel, illetve üzenetekkel gazdagították az adott ügyfél SMS ládáját. Nyilván mint amott mondottamott, a bővebb listázásnál, lehetőség van levél küldésére, ezek az üzenetek az ügyfél által megadott telefonszámra fognak érkezni. Új üzenet küldése mellett lehetőség van a már meglévőket megnézni, hogy mely üzeneteket kapta meg a ügyfél. Mindezek mellett lehetőség van munkánk végzése után kijelentkezni az oldalról.
