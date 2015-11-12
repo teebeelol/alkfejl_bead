@@ -51,6 +51,10 @@ Alternatív    | - 1. A munkatárs az index oldalra lép be elősször az URL me
 Kivételek     | - 1. A kezelő nem regisztrált előzetesen
               | - 2. A a rendszerkezelő helytelen adatokat adott meg a bejelentkezésnél
               | - 3. A kezelő helytelen adatokat adott meg az új ügyfél felvitelekor
+              
+### **Folyamat diagram**
+![Folyamat diagram](/src/alkfejl_bead1_activity.png)
+
 ### **Szerepkörök**
 - **Rendszerkezelő/Rendszerhasználó/dolgozó/munkatárs:** A cégnél dolgozó, cég által erre a munkapozícióra küldött alkalmazott, akinek a feladata a rendszer kezelése, így ezáltal a cég szolgáltatását igénybevevő ügyfelek kezelése, és egyben ezen ügyfelek informálása a rendszeren keresztűl.
 
@@ -118,4 +122,14 @@ Publikus:
 -  '/customer/delete/:id' : GET metódus, melynek lefutása elött list_delete.js fájl fut le, jQuery könyvtár által meghatározott függvények segítségével. Ebben a végpontban Az adott id-jű customer törlődik az adatbázisból, és vele együtt az összes hozzá tartozó sor a customerticket-ből is
 -  '/customer/edit/:id' :  GET metódus, lehetőség van ebben a végpontban sorok adatainak módosítására
 
+## 2.2. Felhasználófelület-modell
 
+### **Oldalvázlatok**
+### **Designtervek**
+
+## 2.3. Osztálymodell
+### **Adatmodell**
+![Adatmodell](/src/alkfejl_bead1_adatmodell.png)
+
+### **Adatbázisterv**
+![Adatmodell](/src/alkfejl_bead1_adatmodell.png)
