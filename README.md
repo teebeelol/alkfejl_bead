@@ -24,8 +24,14 @@ A rendszerben lehetőség van új ügyfelek felvételére, már meglévő ügyfe
 - Üzenetküldési lehetőség ügyfeleknek, melyet csak az adott ügyfél fog megkapni, mindezt a regisztrációnál megadott telefonszámra, SMS formájában
 - Régebben küldött üzenetek megtekintésére is van lehetőség, azok keltezési dátumával egyetemben.
 
-### Használati eset diagram
-![Használati eset diagram](/src/alkfejl_bead_1.png)
+### Használati eset diagram: Regisztrálás vs. Login, és eseményekben való részvétel
+![Használati eset diagram](/src/alk_fejl_bead1_usecase_1.png)
+
+### Használati eset diagram: Regisztrált felhasználó
+![Használati eset diagram](/src/alkfejl_bead1_2_registered.png)
+
+### Használati eset diagram: Regisztrálatlan felhasználó
+![Használati eset diagram](/src/alkfejl_bead1_2_unregistered.png)
 
 ### Használati eset példa
 
