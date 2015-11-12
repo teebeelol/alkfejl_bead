@@ -80,19 +80,29 @@ Intuitív felhasználói felület, könnyű kezelhetőség
 ## 2.1. Architektúra terv
 Az adott program JavaScript nyelven íródott. A fejlesztés C9 IDE-n történt, amely egy ide mellett biztosított egy virtuális szervert is. A A program használta C9 gépen futó PostgreSQL által használt adatbázisokat, ahol több relációs táblában mentve adatokat, azt használunk fel. Ilyen táblák az ügyfelek táblája, oldalra regisztrált ügyfelek táblája, és a felhasználóknak köldütt üzenetek táblája. A PostgreSQL kezelését SAILS-től waterline.js keretrendszer kezeli.
 Bejelentkezést Passport.js kezelte, és a végpontok kezelését express.js keretrendszer működteti. Egy átirányításíg élő üzeneteket a flash.js keretrendszer végzi el, menynek segítségével képesek vagyunk hibákat átközvetíteni, dinamikusan generált oldalakra információkat átvinni. A dinamikus oldal generálást HBS keretrendszer végzi el. A program fő, 'belépési pontja' a server.js, ahova az összes include történik, és többek között itt vannak definiálva a végpontoknál történő működések, ezek egyéb fájlokba való rendszerezésével persze. Ezen keretrendszerek által használt többi keretrendszer a node_modules-ban vannak jelen, az adott programon onnan használják ezeket. Ilyenek a jQuery, stb... A dizájnhoz használt keretrendszerek a Bottswatch és Bootstrap. 
+A fejlesztés során az MVC tervezési mintát követtük, ennek alapján építettük fel a programot, jól elkülöníthető model-view-controller részekre daraboltuk fel.
+- **Model** a program logikai rétege, amely a megvalósításhoz szükséges információkat tartalmazza, itt valósul meg a megoldandó probléma logikailag. Itt találhatóak az adatbázisok, keretrendszerek, includok, és ezek együttműködésével a probléma megoldása.
+- **View** réteg az, amely a felhasználónak a vékony kliensre kirajzolja az általa megjeleníteni kíánt információt, illetve ezen keresztül figyeli a program a felhasználó kéréseit, és hajtja végre az utasításokat, így módosítja a belső müködést.,
+- **Controller** rétegbe érkeznek be a View által észlelt változások, kérések, és ez a modell közreműködésével együtt adja át ismét a kirajzoladnó tartalmat a view-nak
+A GPR mintát is követtük a program fejelsztésekor
+
 
 ### **Komponens diagram**
 ![Komponens diagram](/src/alkfejl_bead1_compdiag.png)
 ### **Oldaltérkép**
+Publikus:
+
 - Főoldal
-- Ügyfelek
-  - Új ügyfél felvétele
-  - Szerkesztés
-  - Törlés
-  - Megtekintés
-- Bejelentkezés:
-  - Regisztráció
-  - Bejelentkezés
+- Login
+
+Ügyfelek
+
+- Főoldal
+- Login/Logout
+- Ügyféllista
+  -  új ügyfél
+  - ügyfél megtekíntése
+    - üzenet küldése ügyfélnek
 
 ### **Végpontok**
 -  '/' :  GET metódus, amely a böngészőben az URL beírása után hívódik meg először. A szerver az index.hbs alapján a HBs segítségével rendereli ki az oldalt
