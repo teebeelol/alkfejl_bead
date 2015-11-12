@@ -5,6 +5,7 @@ module.exports = {
         username: {
             type: 'string',
             required: true,
+            unique: true,
         },
         name: {
             type: 'string',
@@ -18,6 +19,10 @@ module.exports = {
         status: {
             type: 'boolean',
             defaultsTo:false,
+            required: true,
+        },
+        phonenumber: {
+            type: 'string',
             required: true,
         },
     }

@@ -7,6 +7,7 @@ var flash = require('connect-flash');
 var Waterline = require('waterline');
 var waterlineConfig = require('./config/waterline');
 var customerCollection = require('./models/customer');
+var customerticketCollection = require('./models/customerticket');
 var userCollection = require('./models/user');
 
 var indexController = require('./controllers/index');
@@ -171,6 +172,7 @@ app.get('/logout', function(req, res){
 var orm = new Waterline();
 orm.loadCollection(Waterline.Collection.extend(customerCollection));
 orm.loadCollection(Waterline.Collection.extend(userCollection));
+orm.loadCollection(Waterline.Collection.extend(customerticketCollection));
 
 // ORM indítása
 orm.initialize(waterlineConfig, function(err, models) {

@@ -58,22 +58,44 @@
     ],
     "customer": [
       {
-        "username": "bravo",
-        "name": "Bravó János",
-        "validity": "2020-04-15T00:00:00.000Z",
-        "status": true,
-        "createdAt": "2015-11-10T13:53:39.166Z",
-        "updatedAt": "2015-11-10T13:53:39.166Z",
-        "id": 11
+        "username": "Charlie",
+        "name": "Kappa Keepo",
+        "validity": "1976-01-01T00:00:00.000Z",
+        "status": false,
+        "phonenumber": "06132131313132",
+        "createdAt": "2015-11-11T22:49:34.180Z",
+        "updatedAt": "2015-11-11T22:49:34.180Z",
+        "id": 31
       },
       {
-        "username": "charlie",
-        "name": "Csárli Sínes",
-        "validity": "2017-01-01T00:00:00.000Z",
+        "username": "alfa",
+        "name": "Alfás Mátyás",
+        "validity": "1991-01-01T00:00:00.000Z",
+        "status": false,
+        "phonenumber": "0616564782",
+        "createdAt": "2015-11-11T22:50:47.212Z",
+        "updatedAt": "2015-11-11T22:50:47.212Z",
+        "id": 32
+      },
+      {
+        "username": "fdsfsdf",
+        "name": "sadad",
+        "validity": "1976-01-01T00:00:00.000Z",
+        "status": false,
+        "phonenumber": "34324324",
+        "createdAt": "2015-11-11T23:05:03.556Z",
+        "updatedAt": "2015-11-11T23:05:03.556Z",
+        "id": 34
+      },
+      {
+        "username": "bravo",
+        "name": "Bravós Jánoss",
+        "validity": "2040-01-01T00:00:00.000Z",
         "status": true,
-        "createdAt": "2015-11-10T13:54:07.353Z",
-        "updatedAt": "2015-11-10T13:54:07.353Z",
-        "id": 12
+        "phonenumber": "0674563783243428",
+        "createdAt": "2015-11-12T10:31:14.037Z",
+        "updatedAt": "2015-11-12T10:31:14.037Z",
+        "id": 35
       }
     ],
     "user": [
@@ -140,6 +162,130 @@
         "updatedAt": "2015-11-10T22:08:38.818Z",
         "id": 7
       }
+    ],
+    "customerticket": [
+      {
+        "message": "cs",
+        "date": "2015-11-11T21:52:00.950Z",
+        "createdAt": "2015-11-11T21:52:00.955Z",
+        "updatedAt": "2015-11-11T21:52:00.955Z",
+        "id": 1
+      },
+      {
+        "message": "asd",
+        "date": "2015-11-11T21:53:02.962Z",
+        "createdAt": "2015-11-11T21:53:02.965Z",
+        "updatedAt": "2015-11-11T21:53:02.965Z",
+        "id": 2
+      },
+      {
+        "message": "sadasdasdas",
+        "date": "2015-11-11T21:55:31.999Z",
+        "createdAt": "2015-11-11T21:55:32.004Z",
+        "updatedAt": "2015-11-11T21:55:32.005Z",
+        "id": 3
+      },
+      {
+        "message": "fdsfs",
+        "date": "2015-11-11T21:56:22.004Z",
+        "createdAt": "2015-11-11T21:56:22.009Z",
+        "updatedAt": "2015-11-11T21:56:22.009Z",
+        "id": 4
+      },
+      {
+        "message": "asdasd",
+        "date": "2015-11-11T22:01:21.231Z",
+        "createdAt": "2015-11-11T22:01:21.237Z",
+        "updatedAt": "2015-11-11T22:01:21.237Z",
+        "id": 5
+      },
+      {
+        "message": "asdasdfdsfwef",
+        "date": "2015-11-11T22:02:13.677Z",
+        "createdAt": "2015-11-11T22:02:13.681Z",
+        "updatedAt": "2015-11-11T22:02:13.681Z",
+        "id": 6
+      },
+      {
+        "message": "dfsf",
+        "date": "2015-11-11T22:33:57.530Z",
+        "customer": null,
+        "createdAt": "2015-11-11T22:33:57.534Z",
+        "updatedAt": "2015-11-11T22:33:57.534Z",
+        "id": 7
+      },
+      {
+        "message": "fdsfss",
+        "date": "2015-11-11T22:35:18.584Z",
+        "customer": null,
+        "createdAt": "2015-11-11T22:35:18.588Z",
+        "updatedAt": "2015-11-11T22:35:18.588Z",
+        "id": 8
+      },
+      {
+        "message": "sdasdasda",
+        "date": "2015-11-11T22:45:17.882Z",
+        "customer": null,
+        "createdAt": "2015-11-11T22:45:17.886Z",
+        "updatedAt": "2015-11-11T22:45:17.887Z",
+        "id": 9
+      },
+      {
+        "message": "saffffff",
+        "date": "2015-11-11T22:47:39.340Z",
+        "customer": null,
+        "createdAt": "2015-11-11T22:47:39.343Z",
+        "updatedAt": "2015-11-11T22:47:39.343Z",
+        "id": 10
+      },
+      {
+        "message": "asdas",
+        "date": "2015-11-11T22:49:49.518Z",
+        "customer": null,
+        "createdAt": "2015-11-11T22:49:49.520Z",
+        "updatedAt": "2015-11-11T22:49:49.520Z",
+        "id": 11
+      },
+      {
+        "message": "Kreygasm",
+        "date": "2015-11-11T22:49:56.214Z",
+        "customer": null,
+        "createdAt": "2015-11-11T22:49:56.215Z",
+        "updatedAt": "2015-11-11T22:49:56.215Z",
+        "id": 12
+      },
+      {
+        "message": "dasdsad",
+        "date": "2015-11-12T10:28:06.974Z",
+        "customer": null,
+        "createdAt": "2015-11-12T10:28:06.981Z",
+        "updatedAt": "2015-11-12T10:28:06.981Z",
+        "id": 14
+      },
+      {
+        "message": "dsaas",
+        "date": "2015-11-12T10:30:14.523Z",
+        "customer": "bravo",
+        "createdAt": "2015-11-12T10:30:14.526Z",
+        "updatedAt": "2015-11-12T10:30:14.526Z",
+        "id": 15
+      },
+      {
+        "message": "xd",
+        "date": "2015-11-12T10:30:21.393Z",
+        "customer": "bravo",
+        "createdAt": "2015-11-12T10:30:21.395Z",
+        "updatedAt": "2015-11-12T10:30:21.395Z",
+        "id": 16
+      },
+      {
+        "message": "Önnek a státusza épp érvénytelen, kérem rendezze befizetéseit!",
+        "date": "2015-11-12T10:33:35.997Z",
+        "customer": "Charlie",
+        "createdAt": "2015-11-12T10:33:36.001Z",
+        "updatedAt": "2015-11-12T10:33:36.001Z",
+        "id": 17
+      }
     ]
   },
   "schema": {
@@ -184,7 +330,8 @@
     },
     "customer": {
       "username": {
-        "type": "string"
+        "type": "string",
+        "unique": true
       },
       "name": {
         "type": "string"
@@ -195,6 +342,9 @@
       "status": {
         "type": "boolean",
         "defaultsTo": false
+      },
+      "phonenumber": {
+        "type": "string"
       },
       "id": {
         "type": "integer",
@@ -223,13 +373,28 @@
       "forename": {
         "type": "string"
       },
-      "role": {
-        "type": "string",
-        "enum": [
-          "normal",
-          "admin"
-        ],
-        "defaultsTo": "normal"
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "customerticket": {
+      "message": {
+        "type": "string"
+      },
+      "date": {
+        "type": "datetime"
+      },
+      "customer": {
+        "type": "string"
       },
       "id": {
         "type": "integer",
@@ -253,7 +418,10 @@
       "id": 7
     },
     "customer": {
-      "id": 27
+      "id": 35
+    },
+    "customerticket": {
+      "id": 17
     }
   }
 }

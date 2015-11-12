@@ -25,7 +25,7 @@
     <tbody>
         {{#each customers}}
         <tr>
-            <td>{{username}}</td>
+            <td><a class="" href="/customers/customer/{{id}}">{{username}}</a></td>
             <td>{{name}}</td>
             <td>{{validityFormated}}</td>
             {{#if status}}
@@ -34,8 +34,7 @@
             <td><span class="label label-{{this.statusClass}}">Érvénytelen</span></td>
             {{/if}}
             {{#if ../loggedIn}}
-           <td><a class="btn btn-primary btn-sm edit-gomb" href="/customers/edit/{{id}}" role="button">Szerkesztés</a></td>
-           <td><a class="btn btn-danger btn-sm torles-gomb" href="/customers/delete/{{id}}" role="button">Törlés</a></td>
+           <td><a class="btn btn-primary btn-sm edit-gomb" href="/customers/edit/{{id}}" role="button">Szerkesztés</a><a class="btn btn-danger btn-sm torles-gomb" href="/customers/delete/{{id}}" role="button">Törlés</a></td>
             {{/if}}
         </tr>
         {{/each}}
