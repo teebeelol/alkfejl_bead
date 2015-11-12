@@ -1,5 +1,5 @@
 # Alkalmazások fejlesztése 1. beadandó, Herendi Tibor Gyula, ITEALO
-## 1. Követelmény feltárása
+# 1. Követelmény feltárása
 ### 1.1. Célkitűzés, projektindító dokumentum
 A cél az alábbi alkalmazással a KAPPAKEEPONÉGYHEAD Zrt. Telefonközpont cégnek egy ügyfélkezelő, és ügyfélnyilvántartó rendszer létrehozása volt, mely lehetővé teszi a cégnek az ügyfeleit kezelni, karbantartani, meneddzselniés az ügyfeleknek üzeneteket küldeni mind ezt egy egyszerű, de hatásos kezelőfelületen keresztül. 
 
@@ -68,10 +68,16 @@ CPU: Pentium 4, RAM: 1 GB, videó: 1024x768
 Operációs rendszer: Windows XP SP3
 - **Követelmény elemzés:**
 C9 IDE használata, dokumentum-sablonok használatával
-CASE eszköz: creately.com használata
+CASE eszköz: creately.com használata use case diagramok előállításához
 - **A futtatáshoz szükséges operációs rendszer:**
 Tetszőleges operációs rendszer, melyen van működő böngésző
 - **A futtatáshoz szükséges hardver:**
 Operációs rendszerek szerint megadva
 - **Egyéb követelmények:**
 Intuitív felhasználói felület, könnyű kezelhetőség
+
+# 2. Tervezés
+## 2.1. Architektúra terv
+### **Komponens diagram**
+![Komponens diagram](/src/alkfejl_bead1_compdiag.png)
+
