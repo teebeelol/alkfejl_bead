@@ -30,17 +30,18 @@ Azon dolgozók, melyek az Ügyfélnyílvántaartó-, és kezelőrendszert fogjá
 ## 1.4. Nem-funkcionális követelmények
 Kapcsolattartás az ügyfelekkel, hogy a befizetéseket nyomon követve, helyesen lkehessen az adatokat felvinni, illetve módosítani, ezáltal a valós állapotok mutatkozzanak meg a rendszerben.
 
-### Fejlesztési módszertan:
+- **Fejlesztési módszertan:**
 Egységesített Eljárás
-### A fejlesztéshez szükséges hardver:
+- **A fejlesztéshez szükséges hardver:**
 CPU: Pentium 4, RAM: 1 GB, videó: 1024x768
-### A fejlesztéshez használt szoftverek:
+- **A fejlesztéshez használt szoftverek:**
 Operációs rendszer: Windows XP SP3
-### Követelmény elemzés: C9 IDE használata, dokumentum-sablonok használatával
+- **Követelmény elemzés:**
+C9 IDE használata, dokumentum-sablonok használatával
 CASE eszköz: creately.com használata
-### A futtatáshoz szükséges operációs rendszer:
+- **A futtatáshoz szükséges operációs rendszer:**
 Tetszőleges operációs rendszer, melyen van működő böngésző
-### A futtatáshoz szükséges hardver:
+- **A futtatáshoz szükséges hardver:**
 Operációs rendszerek szerint megadva
-### Egyéb követelmények:
+- **Egyéb követelmények:**
 Intuitív felhasználói felület, könnyű kezelhetőség
