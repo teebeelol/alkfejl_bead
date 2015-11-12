@@ -20,5 +20,27 @@ A rendszerben lehetőség van új ügyfelek felvételére, már meglévő ügyfe
 - Lehetőség új ügyfelek felvételére, azok bevitelére a rendszerbe.
 - Lehetőség nyílik a már meglévő ügyfelek adatainak szerkesztésére, ezáltal újabb előfizetés hosszabbítás esetén újabb lejárati dátum megadására.
 - Lehetőség van még már meglévő ügyfelek törlésére, azok törlése a nyilvántartó rendszerből
+
 ### Használati eset diagram
 ![Használati eset diagram](/src/alkfejl_bead_1.png)
+
+## 1.3. Szakterületi követelmények
+Azon dolgozók, melyek az Ügyfélnyílvántaartó-, és kezelőrendszert fogják alkalmazni, illetve használni, követelménynek számít a számitógép alap, felhasználói színtű alkalmazása, ebben bele értődik a billentyűzet használata, böngésző használata, illetve a magyar nyelv ismerete olvasási és írási szinten.
+
+## 1.4. Nem-funkcionális követelmények
+Kapcsolattartás az ügyfelekkel, hogy a befizetéseket nyomon követve, helyesen lkehessen az adatokat felvinni, illetve módosítani, ezáltal a valós állapotok mutatkozzanak meg a rendszerben.
+
+### Fejlesztési módszertan:
+Egységesített Eljárás
+### A fejlesztéshez szükséges hardver:
+CPU: Pentium 4, RAM: 1 GB, videó: 1024x768
+### A fejlesztéshez használt szoftverek:
+Operációs rendszer: Windows XP SP3
+### Követelmény elemzés: C9 IDE használata, dokumentum-sablonok használatával
+CASE eszköz: creately.com használata
+### A futtatáshoz szükséges operációs rendszer:
+Tetszőleges operációs rendszer, melyen van működő böngésző
+### A futtatáshoz szükséges hardver:
+Operációs rendszerek szerint megadva
+### Egyéb követelmények:
+Intuitív felhasználói felület, könnyű kezelhetőség
