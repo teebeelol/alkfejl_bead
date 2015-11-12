@@ -14,6 +14,9 @@ describe('User visits index page', function() {
     });
     
     it('should see welcome page', function() {
-        browser.assert.text('<h1>A KAPPAKEEPO4NÉGYHEAD cég ügyfélnyilvántartó és ügyfélkezelő rendszere.</h1>');
+        browser.assert.text('div.page-header > h1', 'A KAPPAKEEPO4NÉGYHEAD cég ügyfélnyilvántartó és ügyfélkezelő rendszere.');
+    });
+    it('should see the date', function() {
+        browser.assert.text('div.page-header > h2',new Date().toISOString().substring(0, 10));
     });
 });
