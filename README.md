@@ -125,6 +125,7 @@ Publikus:
 ## 2.2. Felhasználófelület-modell
 
 ### **Oldalvázlatok**
+![Oldalvázlat](/src/alkfejl_bead1_drotvaz.png)
 ### **Designtervek**
 ![Designterv](/src/alkfejl_bead1_design.png)
 
@@ -134,3 +135,6 @@ Publikus:
 
 ### **Adatbázisterv**
 ![Adatmodell](/src/alkfejl_bead1_adatmodell.png)
+
+### **Állapotdiagram**
+![Állapotdiagram](/src/alkfejl_bead1_state.png)
