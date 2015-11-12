@@ -158,7 +158,41 @@ Publikus:
 A C9.io egy vastagklienses webes megoldás. Egy olyan webes alkalmazás, ahol lehetőség van új projekteket létrehozni, projektek típusát megadni, mint például Java, C++, NodeJS, PHP, stb... Egy iylen projekt létrehozása után kapunk egy virtuális gépet C9.io-tól, valamennyi HDD, CPU, RAM-mal. Ehez kapunk egy bash ablakot, mellyel lehetőségünk van kezelni a virtuális gépet. Mindezek felett C9 biztosít nekünk egy IDE-t is, és ezeket egyben. a C9-ben való fejlesztés nagyon leegyszerűsít mindent. Bárhonnan, bármikor, ahol van internet hozzáférés, és egy böngésző, kényelmesen tudunk fejleszteni mindezekkel. Mivel basht is kapunk, lehetőségünk vagy telepítgetni, így lehetőség van Github-ot is telepíteni, így a verziózá nagyon egyszerűvé válik. Webes alkalmazások esetén az is egyszerűsítés, hogy nem kell saját webszervert létrehozni, feltelepíteni, hanem ezt mind rendelkezésünkre állítja a C9. 
 ## 3.2 Könyvtárstruktúrában lévő mappák funkiójának bemutatása
 A könyvtárstruktúrát tekintve a program teljes mértékben tagolt, illetve a MVC tervezésí mintának köszönhetően, illetve ezt követve, a model, view, controller részek teljes egészében el vannak különítve egymástol, pontosan ilyen könyvtár struktúrában.
+
 # 4. Tesztelés
+## 4.1. Tesztelési környezet bemutatása
+Az program egyes részeinek tesztelésére a ZOMBIE.JS keretrendszert használtuk. A zombie.js egy funkcionális tesztelést valósít meg, azaz olyan részeket tesztelnénk, melyeket amúgy is használnánk az oldalon. Ilyen lehetnek:
+- Minden végponton megjelenik-e valamilyen oldal, tartalom
+- A megjelenített tartalom helyes-e, tartalmazza azokat a részeket, amit kell
+- Egyáltalán működik-e az oldal, nem-e fut valamilyen hibára egyes tesztelések alatt
+- Esetleges hibákat el kaptuk-e, azaz hibaüzenettel kezeltük, majd az adott hibára reagáltunk-e
+
+A funkcionális tesztelésnek a lényege, hogy a tesztelés annyira bonyolult, annyira megy bele, pont amennyire mi is használnánk az oldalt.
+
+## 3.2 Egységtesztek és Funkcionális tesztek
+Az általam tesztelt adatmodellek között van a users adatmodell, nyilván az adatmodellek tesztelése nagyon fontos, az oldal dinamikusan generált részének túlnyomó többsége adatbázisból lekérdezedd információk alapján generálódik, így ennek a tesztelése nélkülözhetetlen.
+Az általam tesztelt usermodell, és arra kapott eredmények:
+- **Fájl**: index.test.js; user.test.js
+- **Eredmény**:
+
+- User visits index page
+  -  ✓ should be successful
+  -  ✓ should see welcome page
+  -  ✓ should see the date
+
+- UserModel
+  - ✓ should be able to create a user (567ms)
+  - ✓ should be able to find a user (604ms)
+    - #validPassword
+      - ✓ should return true with right password (586ms)
+      - should return false with wrong password (578ms)
+- 7 passing (3s)
+
+A tesztet az **npm test** parancsal lehetett végrehajtani, amely az adott projekten belűl található összes *.test.js fájt lefuttatja, és kilistázza az esetleges hibákat, ha voltak. 
+
+## 3.3 Tesztesetek felsorolása: milyen eseteket próbált végig a hallgató
+ZOMBIE.JS keretrendszer használatával egységteszteket és funkcionális teszteket hajtottam végre annak érdekében, hogy a programom megfelelően működjön, elkerülve az esetleges kellemetlenségeket az éles használat közbeni hibák miatt. 
+
 # 5. Felhasználói dokumentáció
 ## 5.1 A futtatáshoz ajánlott hardver-, szoftver konfiguráció
 Az kezelőrendszer futtatásához egy olyan szervergépen kell elhelyezni a programot, ahol a megfelelő dolgok fel vannak telepítve, ilyen a node.js futtatókörnyezet, melyen a program fut, illetve a program által nélkülözhetetlen egyéb függőségek.
